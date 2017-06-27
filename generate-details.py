@@ -47,5 +47,4 @@ for sample_id, snippets in sample_to_snippets.items():
     ''')
     markdown += ''.join(snippets)
     path = samples_directory.joinpath(f'{sample_id}-details.md')
-    with path.open('wt') as write_file:
-        write_file.write(markdown)
+    path.write_text(markdown)
