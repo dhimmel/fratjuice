@@ -1,0 +1,6 @@
+name: fratjuice
+dependencies:
+- python=3.6.1
+- pip:
+  - git+https://github.com/ianare/exif-py@a886d3474731f4811e8b3f8c1f9e1bcadbb6094a
+  
