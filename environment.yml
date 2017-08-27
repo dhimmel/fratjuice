@@ -1,6 +1,8 @@
 name: fratjuice
 dependencies:
-- python=3.6.1
+- anaconda::biopython=1.69
+- anaconda::ipykernel=4.6.1
+- anaconda::python=3.6.2
 - pip:
   - git+https://github.com/ianare/exif-py@a886d3474731f4811e8b3f8c1f9e1bcadbb6094a
   
