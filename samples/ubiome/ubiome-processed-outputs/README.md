@@ -21,3 +21,24 @@ The absolute counts are shown.
 The microbial species are listed in rows, and the samples are shown in columns.
 The normalized counts are shown (normalized to 1 million reads assigned to Bacteria). 
 - Tab `Top 20` shows the 20 most abundant species, as based on the normalized counts, averaged over all the samples, and also includes a bar graph.
+
+The [`json`](json) directory contains downloads from the [uBiome Explorer](https://explorer.ubiome.com), corresponding to the option:
+
+> **Download taxonomy (JSON):** Download a JSON formatted taxonomy file.
+
+The download of these files was automated, using the following Python script:
+
+```python
+import pathlib
+from urllib.request import urlretrieve
+import pandas
+
+path = pathlib.Path('../kits.tsv')
+kits_df = pandas.read_table(path)
+# Find access token in Explorer and set here:
+token = 'XXXXXXXX'
+for seq_id in kits_df.seq_id:
+    url = f'https://explorer.ubiome.com/export/json/{token}/{seq_id}'
+    path = pathlib.Path(f'json/{seq_id}.json')
+    urlretrieve(url, filename=path)
+```
