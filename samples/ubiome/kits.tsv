@@ -1,12 +1,11 @@
-sample_id	sample_type	kit	tube
-FJ1	cocentrated	592-185-324	Gut
-FJ1	unconcentrated	592-185-324	Spare
-FJ2	cocentrated	606-185-447	Gut
-FJ2	unconcentrated	606-185-447	Spare
-FJ3	cocentrated	655-179-686	Gut
-FJ3	unconcentrated	655-179-686	Spare
-FJ4	cocentrated	687-179-642	Gut
-FJ4	unconcentrated	687-179-642	Spare
-FJ5	cocentrated	699-179-835	Gut
-FJ5	unconcentrated	699-179-835	Spare
-
+sample_id	sample_type	order_id	kit	tube	tube_id	seq_id
+FJ1	concentrated	183059	592-185-324	Gut	NA0008969509	301029
+FJ1	unconcentrated	183059	592-185-324	Spare	NA0013010984	300921
+FJ2	concentrated	183182	606-185-447	Gut	NA0008969520	300945
+FJ2	unconcentrated	183182	606-185-447	Spare	NA0013010993	300948
+FJ3	concentrated	177425	655-179-686	Gut	NA0012382472	301026
+FJ3	unconcentrated	177425	655-179-686	Spare	NA0012406203	300975
+FJ4	concentrated	177381	687-179-642	Gut	NA0012384077	301032
+FJ4	unconcentrated	177381	687-179-642	Spare	NA0012997393	300960
+FJ5	concentrated	177574	699-179-835	Gut	NA0012382439	300909
+FJ5	unconcentrated	177574	699-179-835	Spare	NA0012997391	300987
